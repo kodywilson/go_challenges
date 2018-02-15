@@ -5,6 +5,6 @@ import (
 )
 
 func PrintMessage(s string) error {
-	fmt.Println(s)
-	return nil
+	_, err := fmt.Println(s)
+	return err
 }
