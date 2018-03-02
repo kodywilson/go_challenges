@@ -29,4 +29,25 @@ func main() {
 		pizza = append(pizza, pie[x])
 	}
 	fmt.Println(pizza)
+	// third exercise, slices of slices
+	r2d2 := [][]string{
+		[]string{"a", "b", "c", "d"},
+		[]string{"e", "f", "g", "h"},
+		[]string{"i", "j", "k", "l"},
+		[]string{"m", "n", "o", "p"},
+	}
+	fmt.Println("Starting slice of slices:")
+	fmt.Println(r2d2, len(r2d2), cap(r2d2))
+	for x := 0; x < len(r2d2); x++ {
+		fmt.Println(r2d2[x])
+	}
+	// // rotating our cube by 90 degrees
+	// r2d2_rotate := make([][]string, 4)
+	// // copy(r2d2_rotate, r2d2)
+	// // fmt.Println(r2d2_rotate)
+	// for x := 0; x < len(r2d2); x++ {
+	// 	for y := 0; y < len(r2d2[x]); y++ {
+	// 		r2d2_rotate[x][y] = r2d2[]
+	// 	}
+	// }
 }
